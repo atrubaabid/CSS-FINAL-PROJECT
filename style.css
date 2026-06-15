@@ -374,10 +374,7 @@ main {
   display: grid;
   place-items: center;
   position: relative;
-
 }
-
-
 
 .web-img figure::before {
   content: "";
@@ -392,7 +389,6 @@ main {
   z-index: -1;
 }
 
-
 .web-img figure::after {
   content: "";
   position: absolute;
@@ -406,11 +402,9 @@ main {
   z-index: -2;
 }
 
-
-
 /* theway====================================== */
 
-.theway{
+.theway {
   background-color: var(--supporting-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -420,33 +414,87 @@ main {
   box-shadow: var(--btn-box-shadow);
 }
 
-.twheadings{
+.web{
+  margin-top: 15rem;
+  margin-bottom: -30rem;
+}
+
+.twheadings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 3rem;
-
 }
 
-.twheadings h1{
+.twheadings h1 {
   margin-bottom: 2rem;
   font-size: 3rem;
-
-
 }
 
-.twheadings p{
+.twheadings p {
   margin-bottom: 2rem;
+}
 
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fourth{
+  /* top: -23rem; */
+  position: relative;
+  bottom: -23rem;
+}
+/* FOOTER ==========================================*/
+
+.footer {
+  padding-top: 15rem;
+  background-color: black;
+}
+
+.footer :is(a, p) {
+  color: white;
+}
+
+.f-page {
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.sociallinks h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sociallinks p {
+  margin-bottom: 2rem;
+}
+
+.allicons i {
+  font-size: 2rem;
+  gap: 1rem;
+  width: 3rem;
+  aspect-ratio: 1;
+
+  
 
 }
 
-.img{
- display: flex;
- justify-content: center;
- align-items: center;
+.allicons i:not(:first-child) {
+  margin-left: 1rem;
+
 }
 
 
+.footer-pages-links a{
+  display: block;
+}
 
-
+.footer-pages-links{
+  text-align: center;
+}
