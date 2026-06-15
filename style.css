@@ -23,7 +23,8 @@ h6 {
 
 p,
 li,
-a,label {
+a,
+label {
   font-family: "Urbanist", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -79,7 +80,6 @@ li {
   padding: 9.6rem 3rem;
 }
 
-
 .section-navbar {
   position: fixed;
   z-index: 1;
@@ -88,7 +88,7 @@ li {
   box-shadow:
     rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 /* LOGO */
@@ -500,8 +500,7 @@ main {
 
 /* BLOG-PAGE  ============================================================================== */
 
-
-.bblogs{
+.bblogs {
   margin-bottom: -15rem;
   margin-top: 10rem;
 }
@@ -514,7 +513,6 @@ main {
 }
 
 .b-card {
-  
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   box-shadow: var(--btn-box-shadow);
@@ -522,7 +520,7 @@ main {
   transition: all 0.2s linear;
 }
 
-.b-card:hover{
+.b-card:hover {
   transform: scale(1.1);
 }
 
@@ -560,58 +558,63 @@ main {
   right: 10px;
 }
 
-
-
 /* CONTACT-PAGE  ============================================================================== */
 
-.contact-page{
+.contact-page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   margin-top: 10rem;
 }
 
-
-.c-page{
-margin-top: 15rem;
-margin-bottom: -15rem;
+.c-page {
+  margin-top: 15rem;
+  margin-bottom: -15rem;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-
-
-  & input, textarea{
+  & input,
+  textarea {
     width: 100%;
-    padding:  1.2rem 2.4rem ;
-
+    padding: 1.2rem 2.4rem;
   }
 
-  & textarea{
+  & textarea {
     height: 10rem;
-
   }
 
-  & button{
+  & button {
     border: none;
   }
-
-
-
 }
 
+input:focus-visible, textarea:focus-visible{
+  outline: 1px solid var(--btn-hover-bg-color);
+  border-radius: 2px;
+}
 
-
-.mapp iframe{
+.mapp iframe {
   width: 100%;
   aspect-ratio: 1;
-
-
 }
 
+/* SCROLL-BAR ================================================================ */
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
 
+::-webkit-scrollbar-track {
+  background-color: var(--supporting-color);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+
+/* SCROLL-BAR ================================================================ */
