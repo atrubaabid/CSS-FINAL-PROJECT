@@ -23,7 +23,7 @@ h6 {
 
 p,
 li,
-a {
+a,label {
   font-family: "Urbanist", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -79,11 +79,16 @@ li {
   padding: 9.6rem 3rem;
 }
 
+
 .section-navbar {
+  position: fixed;
+  z-index: 1;
+
   width: 100%;
   box-shadow:
     rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: var(--white-color);
 }
 
 /* LOGO */
@@ -414,7 +419,7 @@ main {
   box-shadow: var(--btn-box-shadow);
 }
 
-.web{
+.web {
   margin-top: 15rem;
   margin-bottom: -30rem;
 }
@@ -441,8 +446,7 @@ main {
   align-items: center;
 }
 
-
-.fourth{
+.fourth {
   /* top: -23rem; */
   position: relative;
   bottom: -23rem;
@@ -480,21 +484,134 @@ main {
   gap: 1rem;
   width: 3rem;
   aspect-ratio: 1;
-
-  
-
 }
 
 .allicons i:not(:first-child) {
   margin-left: 1rem;
-
 }
 
-
-.footer-pages-links a{
+.footer-pages-links a {
   display: block;
 }
 
-.footer-pages-links{
+.footer-pages-links {
   text-align: center;
 }
+
+/* BLOG-PAGE  ============================================================================== */
+
+
+.bblogs{
+  margin-bottom: -15rem;
+  margin-top: 10rem;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  margin-top: 15rem;
+}
+
+.b-card {
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  box-shadow: var(--btn-box-shadow);
+  border-radius: 7px;
+  transition: all 0.2s linear;
+}
+
+.b-card:hover{
+  transform: scale(1.1);
+}
+
+.b-img figure img {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.b-text {
+  padding: 1rem;
+  margin-block: 1rem;
+}
+
+.b-text h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.b-date {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+  color: var(--para-color);
+}
+
+.b-date p {
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.b-date .right-r {
+  position: absolute;
+  right: 10px;
+}
+
+
+
+/* CONTACT-PAGE  ============================================================================== */
+
+.contact-page{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+
+.c-page{
+margin-top: 15rem;
+margin-bottom: -15rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+
+
+  & input, textarea{
+    width: 100%;
+    padding:  1.2rem 2.4rem ;
+
+  }
+
+  & textarea{
+    height: 10rem;
+
+  }
+
+  & button{
+    border: none;
+  }
+
+
+
+}
+
+
+
+.mapp iframe{
+  width: 100%;
+  aspect-ratio: 1;
+
+
+}
+
+
+
+
